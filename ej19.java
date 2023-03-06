@@ -19,7 +19,7 @@ public class Encriptador {
     try {
       in = new BufferedReader(new FileReader("texto.txt")); 
       String linea = in.readLine;
-      while (linea != null) { //mientras no llegue al finaldel archivo
+      while (linea != null) { //mientras no llegue al final del archivo
         alfabeto += linea + "\n"; //el cambio de línea hay que insertarlo manualmente
         linea = in.readLine();
       }
@@ -27,7 +27,7 @@ public class Encriptador {
 
   }
 
-  //Lectura del archivo codec.txt 
+  //Lectura del archivo codec.txt y almacenamiento en el mapa
   Map<Character, Character> codificacion = new HashMap<Character, Character>();
   BufferedReader in = null;
   try {
