@@ -9,7 +9,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ejer16 {
+public class Main {
     public static void main(String[] args) {
         GestionLista gestionLista = new GestionLista();
         gestionLista.leerNombres();
@@ -29,7 +29,7 @@ public class ejer16 {
 }
 
 class GestionLista {
-    private static final String FICHERO = "nombres.dat";
+    private static final String FICHERO = "nombres.txt";
     private List<String> nombres;
 
     public GestionLista() {
